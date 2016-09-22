@@ -5,6 +5,6 @@ Rails.application.routes.draw do
     post "/properties" => "properties#create"
   end
   root to: "searches#search"
-  get '/search', to: 'searches#search'
+  get '/search', to: 'searches#search', as: 'home'
   post '/search', to: 'searches#zillow'
 end
