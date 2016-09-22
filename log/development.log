@@ -22,3 +22,201 @@ Migrating to AddParamsToProperties (20160922191035)
   [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2016-09-22 16:54:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/jasonkwong/developer/realesttools/app/controllers/searches_controller.rb:9: syntax error, unexpected ']', expecting keyword_end):
+  
+app/controllers/searches_controller.rb:9: syntax error, unexpected ']', expecting keyword_end
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.0ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.4ms)
+Started GET "/" for ::1 at 2016-09-22 16:54:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (26.9ms)
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/jasonkwong/developer/realesttools/app/assets/config
+  /Users/jasonkwong/developer/realesttools/app/assets/images
+  /Users/jasonkwong/developer/realesttools/app/assets/javascripts
+  /Users/jasonkwong/developer/realesttools/app/assets/stylesheets
+  /Users/jasonkwong/developer/realesttools/vendor/assets/javascripts
+  /Users/jasonkwong/developer/realesttools/vendor/assets/stylesheets
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.0.1/lib/assets/compiled):
+    4:     <title>Realesttools</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1275206297990197439_70323421105760'
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (17.4ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.7ms)
+Started GET "/" for ::1 at 2016-09-22 16:55:26 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 208ms (Views: 205.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 16:55:43 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZusV3xofzfnWcv1ynXa+hNI1yog92Lo0gL5wH4uujppVJR0XC7xQqUzWMDbJnv6BeGx5dW04AyVodHlRm/6d4A==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 103ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 16:57:04 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8D21kZ7C39V4k1aZhOOGPSy1VIdzf41bdPxO0fLFam7D871Zj2FCheI3m93QC8Y4huzneiOfNEqcNkef4pV5FA==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 54ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 16:57:16 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"edHzGm2XdGVUk1ZDIzgVimX8x7GOWqQ9jh5+T+56brNKH/vSfDTpNc43mwd30FWPz6V0TN66HSxm1HcB/ip9yQ==", "address"=>"", "citystatezip"=>"", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 49ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 16:57:38 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ot+FC5TIp/SPBihcZ2FcWFA9xrUbp1FywlAuZx4hGdwJEY3DhWs6pBWi5RgziRxd+mR1SEtH6GMqmicpDnEKpg==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 103ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 16:58:50 -0400
+  
+SyntaxError (/Users/jasonkwong/developer/realesttools/app/controllers/searches_controller.rb:9: syntax error, unexpected ']', expecting keyword_end):
+  
+app/controllers/searches_controller.rb:9: syntax error, unexpected ']', expecting keyword_end
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (38.8ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (136.5ms)
+Started POST "/search" for ::1 at 2016-09-22 16:59:07 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CUGlbMS+fPPi4GVrjOz+4c9hE0uLTomHmcJFuoGvImA6j62k1R3ho3hEqC/YBL7kZTigttuuMJZxCEz0kf8xGg==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '<HTML><HEAD><TITLE> Web Authentication Redirect</TITLE><META http-equiv="Cache-control" content="no-cache"><META http-equiv="Pragma" content="no-cache"><META http-equiv="Expires" content="-1"><META http-equiv="refresh" content="1; URL=https://wifiwebauth.cuyahoga.lib.oh.us/login.html?redirect=www.zillow.com/webservice/GetSearchResults.htm?address=508+South+Applecross+Rd.&citystatezip=Highland+Heights%2C+OH+44143&rentzestimate=true&zws_id=X1-ZWz1fgbe5szxmz_29gz1"></HEAD></HTML>
+'):
+  
+app/controllers/searches_controller.rb:14:in `zillow'
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (108.3ms)
+Started POST "/search" for ::1 at 2016-09-22 16:59:55 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CUGlbMS+fPPi4GVrjOz+4c9hE0uLTomHmcJFuoGvImA6j62k1R3ho3hEqC/YBL7kZTigttuuMJZxCEz0kf8xGg==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant SearchesController::XML):
+  
+app/controllers/searches_controller.rb:14:in `zillow'
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.5ms)
+Started GET "/search" for ::1 at 2016-09-22 17:04:32 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 78ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 17:04:49 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QV9p4TOny77y8Dlaqvi1ptpDTVXIwdk6RFreaGO3SvFykWEpIgRW7mhU9B7+EPWjcBr+qJghYCuskNcmc+dZiw==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 723ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 17:09:26 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QV9p4TOny77y8Dlaqvi1ptpDTVXIwdk6RFreaGO3SvFykWEpIgRW7mhU9B7+EPWjcBr+qJghYCuskNcmc+dZiw==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 252ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 17:09:37 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TovGSUmpn3majuJRo8c8dgSVbWzAT+0EtTO61Ud2VCp9Rc6BWAoCKQAqLxX3L3xzrszekZCvVBVd+bObVyZHUA==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 204ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-22 17:10:39 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HtFQyk8WR4tlpBk5i9P/ghO2zZ251cJoyguueiPmrOwtH1gCXrXa2/8A1H3fO7+Hue9+YOk1e3kiwac0M7a/lg==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 2)):
+  
+app/controllers/searches_controller.rb:9:in `zillow'
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.8ms)
+Started POST "/search" for ::1 at 2016-09-22 17:12:21 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HtFQyk8WR4tlpBk5i9P/ghO2zZ251cJoyguueiPmrOwtH1gCXrXa2/8A1H3fO7+Hue9+YOk1e3kiwac0M7a/lg==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 654ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
