@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160922184003) do
+ActiveRecord::Schema.define(version: 20160922191035) do
 
   create_table "properties", force: :cascade do |t|
     t.string  "street"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20160922184003) do
     t.date    "last_sold_date"
     t.decimal "last_sold_price"
     t.float   "compscore"
+    t.integer "zpid"
+    t.integer "count"
   end
 
 end

@@ -4,5 +4,5 @@ Rails.application.routes.draw do
     get "/properties/:id(.:format)" => "properties#show"
     post "/properties" => "properties#create"
   end
-  root to "home#index"
+  root to: "home#index"
 end
