@@ -1,0 +1,1 @@
+Tools for the every day real estate investor. Uses Zillow API to deliver only relevant investor data for a given area's properties.
