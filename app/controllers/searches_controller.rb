@@ -1,5 +1,4 @@
 require 'rillow'
-require 'pry'
 
 class SearchesController < ApplicationController
   def search
@@ -21,7 +20,10 @@ class SearchesController < ApplicationController
   thirty_day_change = result["response"][0]["results"][0]["result"][0]["zestimate"][0]["valueChange"][0]["content"]
 
   principle_property = Property.create(zpid:zpid, street:street, city:city, zip:zip, state:state, latitude:latitude, longitude:longitude, zestimate:zestimate, thirty_day_change:thirty_day_change)
- 
+  
+  comps = Rillow.new('X1-ZWz1fgbe5szxmz_29gz1')
+  response = comps.get_deep_comps(principle_property.zpid, 25) 
+  
   render 'search'
   end
 end

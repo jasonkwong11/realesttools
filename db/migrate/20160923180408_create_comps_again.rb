@@ -1,6 +1,6 @@
-class CreateProperties < ActiveRecord::Migration[5.0]
+class CreateCompsAgain < ActiveRecord::Migration[5.0]
   def change
-    create_table :properties do |t|
+    create_table :comps do |t|
       t.string :street
       t.string :city
       t.string :state
@@ -19,7 +19,11 @@ class CreateProperties < ActiveRecord::Migration[5.0]
       t.string :bedrooms
       t.string :last_sold_date
       t.string :last_sold_price
-      t.string :compscore
+      t.string :zpid
+      t.string :home_details_link
+      t.string :chart_data_link
+      t.string :map_this_home_link
+      t.string :similar_sales_link
     end
   end
 end
