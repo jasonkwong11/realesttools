@@ -39,7 +39,6 @@ class SearchesController < ApplicationController
   comparables_hash = response["response"][0]["properties"][0]["comparables"][0]["comp"]
 
   comparables_hash.each do |property|
-    puts property
 
     street = property["address"][0]["street"][0]
     city = property["address"][0]["city"][0]
@@ -59,11 +58,13 @@ class SearchesController < ApplicationController
     last_sold_date = property["lastSoldDate"][0]
     last_sold_price = property["lastSoldPrice"][0]["content"]
     zpid = property["zpid"][0]
+    home_details_link = property["links"][0]["homedetails"][0]
+    chart_data_link = property["links"][0]["graphsanddata"][0]
+    map_this_home_link = property["links"][0]["mapthishome"][0]
+    similar_sales_link = property["links"][0]["comparables"][0]
 
-
-    principle_property.
-      require 'pry'
-      binding.pry
+    principle_property.comps.create(zpid:zpid, street:street, city:city, zip:zip, state:state, latitude:latitude, longitude:longitude, zestimate:zestimate, thirty_day_change:thirty_day_change, percentile:percentile, year_tax_assessed:year_tax_assessed, tax_assessment:tax_assessment, year_built:year_built, square_feet:square_feet, bathrooms:bathrooms, bedrooms:bedrooms, last_sold_date:last_sold_date, last_sold_price:last_sold_price, home_details_link:home_details_link, chart_data_link:chart_data_link, map_this_home_link:map_this_home_link, similar_sales_link:similar_sales_link)
+  
   end
 
   render 'search'
