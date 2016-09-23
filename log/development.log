@@ -1497,3 +1497,135 @@ Processing by SearchesController#zillow as HTML
   [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "properties" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "zpid") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "217 Apple Blossom Ct"], ["city", "Vienna"], ["state", "VA"], ["zip", "22181"], ["latitude", "38.889975"], ["longitude", "-77.274785"], ["zestimate", "809956"], ["thirty_day_change", "380"], ["zpid", "51771287"]]
   [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 1145386ms (Views: 85.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/search" for ::1 at 2016-09-23 16:15:49 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9QFi8C9UJgQ/BzyOY4KobDgnJQsqHQYpuT7pGj+tKUjGz2o4Pve7VKWj8co3auhpkn6W9nr9vzhR9OBUL/06Mg==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "properties" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "zpid") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "508 S Applecross Rd"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.554503"], ["longitude", "-81.456289"], ["zestimate", "424572"], ["thirty_day_change", "-265"], ["zpid", "58553402"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 138015ms (Views: 51.1ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-23 16:18:55 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSdehMXxj6vV4YN6zeUq9kmGyCV3sHjdzdYaWuDB0U266VZM1FIS+09FTj6ZDWrz49972CdQwcwlHBMU8JHCNw==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+REXML::ParseException (#<RuntimeError: Illegal character '&' in raw string "1; URL=https://wifiwebauth.cuyahoga.lib.oh.us/login.html?redirect=www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1fgbe5szxmz_29gz1&address=508%20South%20Applecross%20Rd.&citystatezip=Highland%20Heights,%20OH%2044143">
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/text.rb:156:in `block in check'
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/text.rb:154:in `scan'
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/text.rb:154:in `check'
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/attribute.rb:157:in `element='
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/element.rb:1101:in `[]='
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/parsers/treeparser.rb:36:in `block in parse'
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/parsers/treeparser.rb:35:in `each'
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/parsers/treeparser.rb:35:in `parse'
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/document.rb:288:in `build'
+/Users/jasonkwong/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rexml/document.rb:45:in `initialize'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/xml-simple-1.1.5/lib/xmlsimple.rb:971:in `new'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/xml-simple-1.1.5/lib/xmlsimple.rb:971:in `parse'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/xml-simple-1.1.5/lib/xmlsimple.rb:164:in `xml_in'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/xml-simple-1.1.5/lib/xmlsimple.rb:203:in `xml_in'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rillow-0.2.0/lib/rillow.rb:282:in `fetch_result'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rillow-0.2.0/lib/rillow.rb:45:in `get_search_results'
+/Users/jasonkwong/developer/realesttools/app/controllers/searches_controller.rb:9:in `zillow'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/abstract_controller/base.rb:188:in `process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:126:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:455:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:90:in `run_callbacks'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `block in instrument'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `instrument'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.0.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/abstract_controller/base.rb:126:in `process'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.0.1/lib/action_view/rendering.rb:30:in `process'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_controller/metal.rb:190:in `dispatch'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_controller/metal.rb:262:in `dispatch'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/routing/route_set.rb:32:in `serve'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/routing/route_set.rb:725:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/etag.rb:25:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/conditional_get.rb:38:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/head.rb:12:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:222:in `context'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:216:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:552:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:90:in `run_callbacks'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/web-console-3.3.1/lib/web_console/middleware.rb:28:in `block in call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/static.rb:136:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+...
+Illegal character '&' in raw string "1; URL=https://wifiwebauth.cuyahoga.lib.oh.us/login.html?redirect=www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1fgbe5szxmz_29gz1&address=508%20South%20Applecross%20Rd.&citystatezip=Highland%20Heights,%20OH%2044143"
+Line: 1
+Position: 474
+Last 80 unconsumed characters:
+):
+  
+app/controllers/searches_controller.rb:9:in `zillow'
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.9ms)
+Started POST "/search" for ::1 at 2016-09-23 16:19:07 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSdehMXxj6vV4YN6zeUq9kmGyCV3sHjdzdYaWuDB0U266VZM1FIS+09FTj6ZDWrz49972CdQwcwlHBMU8JHCNw==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "properties" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "zpid") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "508 S Applecross Rd"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.554503"], ["longitude", "-81.456289"], ["zestimate", "424572"], ["thirty_day_change", "-265"], ["zpid", "58553402"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m

@@ -38,12 +38,33 @@ class SearchesController < ApplicationController
   #now iterate through the comparables has to instantiate new comp objects
   comparables_hash = response["response"][0]["properties"][0]["comparables"][0]["comp"]
 
-  comparables_hash.each do ||
+  comparables_hash.each do |property|
+    puts property
 
+    street = property["address"][0]["street"][0]
+    city = property["address"][0]["city"][0]
+    state = property["address"][0]["state"][0]
+    zip = property["address"][0]["zipcode"][0]
+    latitude = property["address"][0]["latitude"][0]
+    longitude = property["address"][0]["longitude"][0]
+    zestimate = property["zestimate"][0]["amount"][0]["content"]
+    thirty_day_change = property["zestimate"][0]["valueChange"][0]["content"]
+    percentile = property["zestimate"][0]["percentile"][0]
+    year_tax_assessed = property["taxAssessmentYear"][0]
+    tax_assessment = property["taxAssessment"][0]
+    year_built = property["yearBuilt"][0]
+    square_feet = property["lotSizeSqFt"][0]
+    bathrooms = property["bathrooms"][0]
+    bedrooms = property["bedrooms"][0]
+    last_sold_date = property["lastSoldDate"][0]
+    last_sold_price = property["lastSoldPrice"][0]["content"]
+    zpid = property["zpid"][0]
+
+
+    principle_property.
+      require 'pry'
+      binding.pry
   end
-
-  require 'pry'
-  binding.pry
 
   render 'search'
   end
