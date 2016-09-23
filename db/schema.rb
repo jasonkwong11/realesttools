@@ -10,32 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160923180408) do
+ActiveRecord::Schema.define(version: 20160923204741) do
 
   create_table "comps", force: :cascade do |t|
-    t.string "street"
-    t.string "city"
-    t.string "state"
-    t.string "zip"
-    t.string "latitude"
-    t.string "longitude"
-    t.string "zestimate"
-    t.string "thirty_day_change"
-    t.string "percentile"
-    t.string "rent_zestimate"
-    t.string "year_tax_assessed"
-    t.string "tax_assessment"
-    t.string "year_built"
-    t.string "square_feet"
-    t.string "bathrooms"
-    t.string "bedrooms"
-    t.string "last_sold_date"
-    t.string "last_sold_price"
-    t.string "zpid"
-    t.string "home_details_link"
-    t.string "chart_data_link"
-    t.string "map_this_home_link"
-    t.string "similar_sales_link"
+    t.string  "street"
+    t.string  "city"
+    t.string  "state"
+    t.string  "zip"
+    t.string  "latitude"
+    t.string  "longitude"
+    t.string  "zestimate"
+    t.string  "thirty_day_change"
+    t.string  "percentile"
+    t.string  "rent_zestimate"
+    t.string  "year_tax_assessed"
+    t.string  "tax_assessment"
+    t.string  "year_built"
+    t.string  "square_feet"
+    t.string  "bathrooms"
+    t.string  "bedrooms"
+    t.string  "last_sold_date"
+    t.string  "last_sold_price"
+    t.string  "zpid"
+    t.string  "home_details_link"
+    t.string  "chart_data_link"
+    t.string  "map_this_home_link"
+    t.string  "similar_sales_link"
+    t.integer "property_id"
   end
 
   create_table "properties", force: :cascade do |t|
