@@ -1,2 +1,0 @@
-realesttools = angular.module('realesttools',[
-])

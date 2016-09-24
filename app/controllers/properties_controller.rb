@@ -1,10 +1,10 @@
 class PropertiesController < ApplicationController
-  def index
-  end
 
   def show
     @property = Property.last
-    require 'pry'
-    binding.pry
+    respond_to do |format|
+      format.html {render :show}
+      format.json { render json: @property}
+    end
   end
 end

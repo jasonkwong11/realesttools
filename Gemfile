@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 
+gem 'active_model_serializers'
 gem 'bower-rails'
+gem 'angular-rails-templates'
 
 gem 'pry'
 
