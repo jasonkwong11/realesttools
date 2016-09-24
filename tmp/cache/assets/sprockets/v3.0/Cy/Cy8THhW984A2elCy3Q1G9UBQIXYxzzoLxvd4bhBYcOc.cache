@@ -1,0 +1,7 @@
+I"m(function() {
+  var realesttools;
+
+  realesttools = angular.module('realesttools', []);
+
+}).call(this);
+:ET

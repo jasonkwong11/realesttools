@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+
+gem 'bower-rails'
+
 gem 'pry'
 
 gem 'faraday'
@@ -31,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'sass', '3.2.19' 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
