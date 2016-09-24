@@ -1834,3 +1834,170 @@ Processing by SearchesController#zillow as HTML
 Completed 200 OK in 1461ms (Views: 353.1ms | ActiveRecord: 49.1ms)
 
 
+Started GET "/" for ::1 at 2016-09-24 00:10:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (25.3ms)
+Completed 500 Internal Server Error in 345ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap/dist/css/bootstrap' with type 'text/css'
+Checked in these paths: 
+  /Users/jasonkwong/developer/realesttools/app/assets/config
+  /Users/jasonkwong/developer/realesttools/app/assets/images
+  /Users/jasonkwong/developer/realesttools/app/assets/javascripts
+  /Users/jasonkwong/developer/realesttools/app/assets/stylesheets
+  /Users/jasonkwong/developer/realesttools/vendor/assets/bower_components
+  /Users/jasonkwong/developer/realesttools/vendor/assets/javascripts
+  /Users/jasonkwong/developer/realesttools/vendor/assets/stylesheets
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.0.1/lib/assets/compiled):
+    4:     <title>Realesttools</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css.scss:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4376595325871407429_70108925276480'
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.6ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.1ms)
+Started GET "/" for ::1 at 2016-09-24 00:13:14 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets.
+Load paths:
+  /Users/jasonkwong/developer/realesttools/app/assets/config
+  /Users/jasonkwong/developer/realesttools/app/assets/images
+  /Users/jasonkwong/developer/realesttools/app/assets/javascripts
+  /Users/jasonkwong/developer/realesttools/app/assets/stylesheets
+  /Users/jasonkwong/developer/realesttools/vendor/assets/bower_components
+  /Users/jasonkwong/developer/realesttools/vendor/assets/javascripts
+  /Users/jasonkwong/developer/realesttools/vendor/assets/stylesheets
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.0.1/lib/assets/compiled):
+    4:     <title>Realesttools</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4376595325871407429_70108933987420'
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (19.4ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (147.8ms)
+Started GET "/" for ::1 at 2016-09-24 00:13:31 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "": expected selector or at-rule, was "/*"):
+    4:     <title>Realesttools</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css.scss:1
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4376595325871407429_70108971395320'
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendering /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jasonkwong/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.2ms)
+Started GET "/" for ::1 at 2016-09-24 00:14:27 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 279ms (Views: 276.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2016-09-24 00:14:34 -0400
+Processing by SearchesController#zillow as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BEucJIn1zY+0aRQyzbVVNgl2qSY1RjM/5FdPnIgZ6iM3hZTsmFZQ3y7N2XaZXRUzoy8a22Wmii4MnUbSmEn5WQ==", "address"=>"508 South Applecross Rd.", "citystatezip"=>"Highland Heights, OH 44143", "commit"=>"Search!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "properties" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "zpid") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "508 S Applecross Rd"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.554503"], ["longitude", "-81.456289"], ["zestimate", "424572"], ["thirty_day_change", "-265"], ["zpid", "58553402"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "6196 S Applecross Rd"], ["city", "Richmond Heights"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.554126"], ["longitude", "-81.456215"], ["zestimate", "431163"], ["thirty_day_change", "2417"], ["percentile", "96"], ["year_tax_assessed", "2015"], ["tax_assessment", "373800.0"], ["year_built", "1994"], ["square_feet", "36533"], ["bathrooms", "3.5"], ["bedrooms", "4"], ["last_sold_date", "05/18/2016"], ["last_sold_price", "430000"], ["zpid", "33715044"], ["home_details_link", "http://www.zillow.com/homedetails/6196-S-Applecross-Rd-Richmond-Heights-OH-44143/33715044_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/6196-S-Applecross-Rd-Richmond-Heights-OH-44143/33715044_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/33715044_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/33715044_zpid/"], ["property_id", 18]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "6294 S Applecross Rd"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.553933"], ["longitude", "-81.451633"], ["zestimate", "367603"], ["thirty_day_change", "-4594"], ["percentile", "89"], ["year_tax_assessed", "2015"], ["tax_assessment", "368900.0"], ["year_built", "1992"], ["square_feet", "20952"], ["bathrooms", "3.5"], ["bedrooms", "4"], ["last_sold_date", "05/19/2016"], ["last_sold_price", "318000"], ["zpid", "33715052"], ["home_details_link", "http://www.zillow.com/homedetails/6294-S-Applecross-Rd-Cleveland-OH-44143/33715052_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/6294-S-Applecross-Rd-Cleveland-OH-44143/33715052_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/33715052_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/33715052_zpid/"], ["property_id", 18]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "367 E Glen Eagle Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.56243"], ["longitude", "-81.464524"], ["zestimate", "389639"], ["thirty_day_change", "1122"], ["percentile", "92"], ["year_tax_assessed", "2015"], ["tax_assessment", "363300.0"], ["year_built", "1998"], ["square_feet", "8946"], ["bathrooms", "3.5"], ["bedrooms", "3"], ["last_sold_date", "11/19/2015"], ["last_sold_price", "370000"], ["zpid", "58552601"], ["home_details_link", "http://www.zillow.com/homedetails/367-E-Glen-Eagle-Dr-Cleveland-OH-44143/58552601_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/367-E-Glen-Eagle-Dr-Cleveland-OH-44143/58552601_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58552601_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58552601_zpid/"], ["property_id", 18]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "6236 Coldstream Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.562641"], ["longitude", "-81.453933"], ["zestimate", "347723"], ["thirty_day_change", "2518"], ["percentile", "87"], ["year_tax_assessed", "2015"], ["tax_assessment", "345100.0"], ["year_built", "1990"], ["square_feet", "17424"], ["bathrooms", "3.5"], ["bedrooms", "4"], ["last_sold_date", "05/27/2016"], ["last_sold_price", "330000"], ["zpid", "58552691"], ["home_details_link", "http://www.zillow.com/homedetails/6236-Coldstream-Dr-Cleveland-OH-44143/58552691_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/6236-Coldstream-Dr-Cleveland-OH-44143/58552691_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58552691_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58552691_zpid/"], ["property_id", 18]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "6221 Tourelle Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.562168"], ["longitude", "-81.454673"], ["zestimate", "395411"], ["thirty_day_change", "1335"], ["percentile", "92"], ["year_tax_assessed", "2015"], ["tax_assessment", "361200.0"], ["year_built", "1990"], ["square_feet", "17424"], ["bathrooms", "4.0"], ["bedrooms", "5"], ["last_sold_date", "12/01/2015"], ["last_sold_price", "400000"], ["zpid", "58552718"], ["home_details_link", "http://www.zillow.com/homedetails/6221-Tourelle-Dr-Cleveland-OH-44143/58552718_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/6221-Tourelle-Dr-Cleveland-OH-44143/58552718_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58552718_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58552718_zpid/"], ["property_id", 18]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "6229 Tourelle Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.562164"], ["longitude", "-81.454307"], ["zestimate", "343940"], ["thirty_day_change", "92"], ["percentile", "86"], ["year_tax_assessed", "2015"], ["tax_assessment", "317400.0"], ["year_built", "1991"], ["square_feet", "17498"], ["bathrooms", "3.0"], ["bedrooms", "4"], ["last_sold_date", "03/02/2016"], ["last_sold_price", "312000"], ["zpid", "58552719"], ["home_details_link", "http://www.zillow.com/homedetails/6229-Tourelle-Dr-Cleveland-OH-44143/58552719_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/6229-Tourelle-Dr-Cleveland-OH-44143/58552719_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58552719_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58552719_zpid/"], ["property_id", 18]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "344 Longspur Rd"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.562062"], ["longitude", "-81.450176"], ["zestimate", "300394"], ["thirty_day_change", "1486"], ["percentile", "81"], ["year_tax_assessed", "2015"], ["tax_assessment", "243700.0"], ["year_built", "1992"], ["square_feet", "21344"], ["bathrooms", "2.5"], ["bedrooms", "4"], ["last_sold_date", "05/18/2016"], ["last_sold_price", "300000"], ["zpid", "58552798"], ["home_details_link", "http://www.zillow.com/homedetails/344-Longspur-Rd-Cleveland-OH-44143/58552798_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/344-Longspur-Rd-Cleveland-OH-44143/58552798_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58552798_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58552798_zpid/"], ["property_id", 18]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "456 Locklie Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.557611"], ["longitude", "-81.461359"], ["zestimate", "326516"], ["thirty_day_change", "2969"], ["percentile", "85"], ["year_tax_assessed", "2015"], ["tax_assessment", "291000.0"], ["year_built", "1984"], ["square_feet", "17424"], ["bathrooms", "2.5"], ["bedrooms", "4"], ["last_sold_date", "05/05/2016"], ["last_sold_price", "329500"], ["zpid", "58553065"], ["home_details_link", "http://www.zillow.com/homedetails/456-Locklie-Dr-Cleveland-OH-44143/58553065_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/456-Locklie-Dr-Cleveland-OH-44143/58553065_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58553065_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58553065_zpid/"], ["property_id", 18]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "486 Locklie Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.555965"], ["longitude", "-81.461389"], ["zestimate", "343635"], ["thirty_day_change", "3548"], ["percentile", "86"], ["year_tax_assessed", "2015"], ["tax_assessment", "341500.0"], ["year_built", "1983"], ["square_feet", "17500"], ["bathrooms", "4.0"], ["bedrooms", "4"], ["last_sold_date", "01/15/2016"], ["last_sold_price", "324500"], ["zpid", "58553211"], ["home_details_link", "http://www.zillow.com/homedetails/486-Locklie-Dr-Cleveland-OH-44143/58553211_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/486-Locklie-Dr-Cleveland-OH-44143/58553211_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58553211_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58553211_zpid/"], ["property_id", 18]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "487 Lowell Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.555974"], ["longitude", "-81.462025"], ["zestimate", "393394"], ["thirty_day_change", "2233"], ["percentile", "92"], ["year_tax_assessed", "2015"], ["tax_assessment", "326600.0"], ["year_built", "1988"], ["square_feet", "17498"], ["bathrooms", "3.0"], ["bedrooms", "4"], ["last_sold_date", "02/16/2016"], ["last_sold_price", "390125"], ["zpid", "58553247"], ["home_details_link", "http://www.zillow.com/homedetails/487-Lowell-Dr-Cleveland-OH-44143/58553247_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/487-Lowell-Dr-Cleveland-OH-44143/58553247_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58553247_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58553247_zpid/"], ["property_id", 18]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "6212 S Applecross Rd"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.553984"], ["longitude", "-81.455336"], ["zestimate", "412375"], ["thirty_day_change", "-4358"], ["percentile", "94"], ["year_tax_assessed", "2015"], ["tax_assessment", "391200.0"], ["year_built", "1993"], ["square_feet", "18935"], ["bathrooms", "3.0"], ["bedrooms", "5"], ["last_sold_date", "05/23/2016"], ["last_sold_price", "452000"], ["zpid", "58553404"], ["home_details_link", "http://www.zillow.com/homedetails/6212-S-Applecross-Rd-Cleveland-OH-44143/58553404_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/6212-S-Applecross-Rd-Cleveland-OH-44143/58553404_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58553404_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58553404_zpid/"], ["property_id", 18]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "501 Longspur Rd"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.555166"], ["longitude", "-81.44967"], ["zestimate", "368889"], ["thirty_day_change", "-83"], ["percentile", "89"], ["year_tax_assessed", "2015"], ["tax_assessment", "300800.0"], ["year_built", "1992"], ["square_feet", "17424"], ["bathrooms", "3.0"], ["bedrooms", "4"], ["last_sold_date", "12/24/2015"], ["last_sold_price", "358000"], ["zpid", "58553438"], ["home_details_link", "http://www.zillow.com/homedetails/501-Longspur-Rd-Cleveland-OH-44143/58553438_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/501-Longspur-Rd-Cleveland-OH-44143/58553438_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58553438_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58553438_zpid/"], ["property_id", 18]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "593 Lander Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.549354"], ["longitude", "-81.465304"], ["zestimate", "237852"], ["thirty_day_change", "-465"], ["percentile", "71"], ["year_tax_assessed", "2015"], ["tax_assessment", "175100.0"], ["year_built", "1968"], ["square_feet", "16117"], ["bathrooms", "2.5"], ["bedrooms", "3"], ["last_sold_date", "10/27/2015"], ["last_sold_price", "318500"], ["zpid", "58553802"], ["home_details_link", "http://www.zillow.com/homedetails/593-Lander-Dr-Cleveland-OH-44143/58553802_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/593-Lander-Dr-Cleveland-OH-44143/58553802_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58553802_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58553802_zpid/"], ["property_id", 18]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "657 Jefferson Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.546979"], ["longitude", "-81.461014"], ["zestimate", "231189"], ["thirty_day_change", "1704"], ["percentile", "70"], ["year_tax_assessed", "2015"], ["tax_assessment", "215700.0"], ["year_built", "1967"], ["square_feet", "18064"], ["bathrooms", "3.0"], ["bedrooms", "4"], ["last_sold_date", "06/24/2016"], ["last_sold_price", "249900"], ["zpid", "58554361"], ["home_details_link", "http://www.zillow.com/homedetails/657-Jefferson-Dr-Cleveland-OH-44143/58554361_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/657-Jefferson-Dr-Cleveland-OH-44143/58554361_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58554361_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58554361_zpid/"], ["property_id", 18]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comps" ("street", "city", "state", "zip", "latitude", "longitude", "zestimate", "thirty_day_change", "percentile", "year_tax_assessed", "tax_assessment", "year_built", "square_feet", "bathrooms", "bedrooms", "last_sold_date", "last_sold_price", "zpid", "home_details_link", "chart_data_link", "map_this_home_link", "similar_sales_link", "property_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street", "658 Davidson Dr"], ["city", "Cleveland"], ["state", "OH"], ["zip", "44143"], ["latitude", "41.547032"], ["longitude", "-81.460214"], ["zestimate", "227265"], ["thirty_day_change", "525"], ["percentile", "69"], ["year_tax_assessed", "2015"], ["tax_assessment", "187000.0"], ["year_built", "1987"], ["square_feet", "18513"], ["bathrooms", "2.5"], ["bedrooms", "3"], ["last_sold_date", "07/05/2016"], ["last_sold_price", "220000"], ["zpid", "58554373"], ["home_details_link", "http://www.zillow.com/homedetails/658-Davidson-Dr-Cleveland-OH-44143/58554373_zpid/"], ["chart_data_link", "http://www.zillow.com/homedetails/658-Davidson-Dr-Cleveland-OH-44143/58554373_zpid/#charts-and-data"], ["map_this_home_link", "http://www.zillow.com/homes/58554373_zpid/"], ["similar_sales_link", "http://www.zillow.com/homes/comps/58554373_zpid/"], ["property_id", 18]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 957ms (Views: 20.3ms | ActiveRecord: 33.2ms)
+
+
