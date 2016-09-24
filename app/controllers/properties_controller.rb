@@ -3,5 +3,8 @@ class PropertiesController < ApplicationController
   end
 
   def show
+    @property = Property.last
+    require 'pry'
+    binding.pry
   end
 end

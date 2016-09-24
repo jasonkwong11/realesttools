@@ -12,3 +12,19 @@
     </div>
   </div>
 </div>
+
+<h1>Search for Properties Near Me</h1>
+<%= form_tag '/search' do %>
+  <%= label_tag :'street address' %>
+  <%= text_field_tag :address %>
+
+  <%= label_tag :'city, state and zip' %>
+  <%= text_field_tag :citystatezip %>
+  <%= submit_tag "Search!" %>
+<% end %>
+
+<div>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% end %>
+</div>
