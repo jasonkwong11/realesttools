@@ -17,7 +17,7 @@ angular
       .state('property', {
         url: '/property',
         templateUrl: '/app/views/properties/show.html',
-        controller: 'CreatePropertyController'
+        controller: 'PropertyController'
       })
 
     $urlRouterProvider.otherwise('/');
