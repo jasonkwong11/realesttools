@@ -1,18 +1,34 @@
-function PropertyController($scope, Property, $stateParams) {
+function PropertyController($scope, $stateParams, GetPropertyService) {
   var ctrl = this;
 
-  ctrl.property = Property.get({id: $stateParams.id});
-  ctrl.comps = Property.query();
+  GetPropertyService
+  .getProperty()
+    .then(function(response){
+      if (response){
+        console.log("GREATE SUCCESS");
 
-  console.log("THIS IS PROPERTY:")
-  console.log(ctrl.property)
+        console.log(response.data);
+        ctrl.property = response.data;
+
+      } else {
+        console.log("THE PROMISE RESOLVED BUT FAILED");
+      }
+    }, function(error){
+      console.log("The promise was rejected, error!")
+    })
+
+  //ctrl.property = Property.get({id: $stateParams.id});
+  //ctrl.comps = Property.query();
+
+  //console.log("THIS IS PROPERTY:")
+ // console.log(ctrl.property)
   
-  console.log("THIS IS COMPS:")
-  console.log(ctrl.comps)
+  //console.log("THIS IS COMPS:")
+//  console.log(ctrl.comps)
 
 }
 
-PropertyController.$inject = ['$scope', 'Property', '$stateParams'];
+PropertyController.$inject = ['$scope', '$stateParams', 'GetPropertyService'];
 
 angular
   .module('Realesttools')
