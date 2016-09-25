@@ -2,14 +2,12 @@ START (This is in views/properties/show.html.erb)
 
     <div ng-app="Realesttools" class="Realesttools">
 
-
     <div ui-view><a href="" ui-sref="property">Go to the user page!</a>
-      <ui-view><div ng-controller="PropertyController as vm" ng-init="getProperty()">
-        <h2>{{vm.property.city}}</h2>
+      <ui-view><div ng-controller="PropertyController as vm">
+        <h2>{{ vm.property.city }}</h2>
       </ui-view>
         <ul>  
           <li ng-repeat="property in vm.property">
-
              {{ property.city }} 
           </li>
         </ul> 
