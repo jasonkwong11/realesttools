@@ -1,12 +1,21 @@
 angular
   .module('Realesttools',[
-    'templates',
     'ui.router',
-    'controllers',
+    'ngResource',
+    'templates',
+    'angularUtils.directives.dirPagination'
     ]);
-  .controller('CreateLectureCtrl', CreateLectureCtrl)
-  .config(function ($stateProvider) {
+
+  .config(function ($stateProvider, $urlRouterProvider, paginationTemplateProvider) {
+    paginationTemplateProvider.setPath('pagination/mine.tpl.html');
+
     $stateProvider
+    
+      .state('home', {
+        url: "/",
+        templateUrl: "index.html",
+      })
+
       .state('property', {
         url: '/property',
         templateUrl: '/app/views/properties/show.html'
