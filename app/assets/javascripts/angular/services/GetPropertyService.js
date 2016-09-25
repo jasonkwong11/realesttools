@@ -1,6 +1,6 @@
 function GetPropertyService($http) {
   this.getProperty = function () {
-    return $http.get('/api/property/')
+    return $http.get('/api/property.json')
   }
 };
 

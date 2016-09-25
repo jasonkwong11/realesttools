@@ -1,0 +1,25 @@
+{:uriI"ˆfile://app/assets/javascripts/templates/index.html?type=text/ng-html&id=d6947f9ffde6f1b754fe2aa20f4f67588c77a48b6dceec96e51539c084f8d771:ET:load_pathI"app/assets/javascripts;T:filenameI"0app/assets/javascripts/templates/index.html;T:	nameI"templates/index;T:logical_pathI"templates/index.html;T:content_typeI"text/ng-html;T:sourceI"q<header class="main-header">
+  <div class="title">
+    <h1 class="header-h1">Welcome to Realesttools!</h1>
+    <h4 class="header-h4">The quickest way for real estate investors to find comparable propertys for a potential investment.</h4>
+    <br>
+    <ui-view>HI</ui-view>
+
+
+    <div ng-app="app" class="app">
+
+        <div ui-view><a href="" ui-sref="property">Go to the user page!</a></div>
+    </div>
+
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/app/app.js"></script>
+    <script src="js/app/controllers/UserController.js"></script>
+
+  </div>
+</header>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI">file-digest://app/assets/javascripts/templates/index.html;TTF:charsetI"
+utf-8;F:digest"%|ÿuP4\;Û‡Ý13’{iÄÄ#ãÜÈ•e,—¶6™`XË:lengthiq:dependencies_digest"%
+<p,l”[Ÿ¹Dâ˜r"ñ÷Ž4ƒêe–H{a^,Ó± :idI"Ed6947f9ffde6f1b754fe2aa20f4f67588c77a48b6dceec96e51539c084f8d771;F:
+mtimel+«çW

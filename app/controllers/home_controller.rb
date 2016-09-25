@@ -70,6 +70,8 @@ class HomeController < ApplicationController
   
   end
 
-  redirect_to :property
+#still need to validate for errors
+ # redirect_to :property
+   redirect_to :property
   end
 end
