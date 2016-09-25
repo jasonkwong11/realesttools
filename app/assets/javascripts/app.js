@@ -2,12 +2,10 @@ angular
   .module('Realesttools',[
     'ui.router',
     'ngResource',
-    'templates',
-    'angularUtils.directives.dirPagination'
-    ]);
+    'templates'
+    ])
 
-  .config(function ($stateProvider, $urlRouterProvider, paginationTemplateProvider) {
-    paginationTemplateProvider.setPath('pagination/mine.tpl.html');
+  .config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
 
@@ -18,9 +16,9 @@ angular
 
       .state('property', {
         url: '/property',
-        templateUrl: '/app/views/properties/show.html'
-        controller: 'CreatePropertyCtrl as ctrl'
+        templateUrl: '/app/views/properties/show.html',
+        controller: 'CreatePropertyController'
       })
 
     $urlRouterProvider.otherwise('/');
-  })
+  });

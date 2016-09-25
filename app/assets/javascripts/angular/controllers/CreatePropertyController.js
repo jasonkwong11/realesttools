@@ -13,5 +13,5 @@ function CreatePropertyController(GetPropertyService) {
 }
 
 angular
-  .module('Realestinvestor')
-  .controller('Realestinvestor', Realestinvestor)
+  .module('Realesttools')
+  .controller('CreatePropertyController', CreatePropertyController)

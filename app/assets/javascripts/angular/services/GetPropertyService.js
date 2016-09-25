@@ -1,11 +1,11 @@
 function GetPropertyService($http) {
   this.getProperty = function () {
-    return $http.get('/api/property.json')
+    return $http.get('/property.json')
   };
 }
 
 GetPropertyService.$inject = ['$http'];
 
 angular
-  .module('Realestinvestor')
+  .module('Realesttools')
   .service('GetPropertyService', GetPropertyService);
