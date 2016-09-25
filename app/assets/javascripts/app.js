@@ -10,7 +10,7 @@ angular
     paginationTemplateProvider.setPath('pagination/mine.tpl.html');
 
     $stateProvider
-    
+
       .state('home', {
         url: "/",
         templateUrl: "index.html",
@@ -21,4 +21,6 @@ angular
         templateUrl: '/app/views/properties/show.html'
         controller: 'CreatePropertyCtrl as ctrl'
       })
+
+    $urlRouterProvider.otherwise('/');
   })
