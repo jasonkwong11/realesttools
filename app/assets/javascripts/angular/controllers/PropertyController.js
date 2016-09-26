@@ -1,20 +1,13 @@
 function PropertyController($scope, $stateParams, GetPropertyService) {
   var ctrl = this;
-  ctrl.property = [];
+  $scope.property;
 
   GetPropertyService
-  .getProperty()
-    .then(function(response){
-      if (response){
-        console.log("GREATE SUCCESS");
-        console.log(response.data);
-        ctrl.property = response.data;
-      } else {
-        console.log("THE PROMISE RESOLVED BUT FAILED");
-      }
-    }, function(error){
-      console.log("The promise was rejected, error!") 
-  })
+    .getProperty().success(function(data){
+      console.log("GREATE SUCCESS")
+      console.log(data);
+    $scope.property = data;
+  });
   
 
   //ctrl.property = Property.get({id: $stateParams.id});
@@ -28,7 +21,7 @@ function PropertyController($scope, $stateParams, GetPropertyService) {
 
 }
 
-PropertyController.$inject = ['$scope', '$stateParams', 'GetPropertyService', 'property'];
+PropertyController.$inject = ['$scope', '$stateParams', 'GetPropertyService'];
 
 angular
   .module('Realesttools')
