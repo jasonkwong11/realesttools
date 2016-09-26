@@ -1,10 +1,11 @@
 START (This is in views/properties/show.html.erb)
 
 <div ng-app="Realesttools">
-  <div ng-controller="PropertyController as ctrl">
-  {{ ctrl.property.city }}
+
+ <ui-view> {{ ctrl.property.city }} 
   <span ng-bind="ctrl.property.city"></span>
-  </div>
+  </ui-view>
+ 
 </div>
 
 There will be comps below for this property END (This is in views/properties/show.html.erb)
