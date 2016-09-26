@@ -5,8 +5,9 @@ function PropertyController($scope, $stateParams, GetPropertyService) {
   GetPropertyService
     .getProperty().success(function(data){
       console.log("GREATE SUCCESS")
-      console.log(data);
+
     $scope.property = data;
+    console.log($scope.property);
   });
   
 
