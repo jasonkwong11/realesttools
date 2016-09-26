@@ -1,0 +1,66 @@
+{:uriI"ˆfile://app/assets/javascripts/templates/index.html?type=text/ng-html&id=d5d6f32f0d00cf93a86d637239d5b88a4ca0560e459e4cc09f30b75b6562c22d:ET:load_pathI"app/assets/javascripts;T:filenameI"0app/assets/javascripts/templates/index.html;T:	nameI"templates/index;T:logical_pathI"templates/index.html;T:content_typeI"text/ng-html;T:sourceI"'START: THIS IS IN TEMPLATES/INDEX
+
+
+ <div ng-app="Realesttools" class="Realesttools" controller="PropertyController">
+
+
+    <div ui-view><a href="" ui-sref="property">Go to the user page!</a>
+      <ui-view><div ng-controller="PropertyController" >
+              <pre>{{$scope | json}}</pre>
+              test
+        <h2>{{vm.property.city}}</h2>
+      </ui-view>
+        <ul>  
+          <li ng-repeat="property in vm.property">
+             {{ property.city }} 
+          </li>
+        </ul> 
+      </div> 
+    </div>
+    </div>
+
+    
+<header class="row">
+  <h1 class="text-center col-md-6 col-md-offset-3">Find Recipes</h1>
+</header>
+<section class="row">
+  <form>
+    <div class="form-group col-md-6 col-md-offset-3">
+      <label for="keywords" class="sr-only">Keywords</label>
+      <input type="text" autofocus class="form-control" placeholder="Recipe name, e.g. Baked Potato">
+    </div>
+    <div class="form-group col-md-6 col-md-offset-3 text-center">
+      <button class="btn btn-primary btn-lg">Search</button>
+    </div>
+  </form>
+</section>
+<hr>
+<section class="row">
+  <h1 class="text-center h2">Results</h1>
+  <section class="well col-md-6 col-md-offset-3">
+    <h1 class="h3 col-md-6 text-right" style="margin-top: 0"><a href="#">Baked Potato w/ Cheese</a></h1>
+    <div class="col-md-6">
+      <button class="btn btn-info">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+    </div>
+  </section>
+  <section class="well col-md-6 col-md-offset-3">
+    <h1 class="h3 col-md-6 text-right" style="margin-top: 0"><a href="#">Garlic Mashed Potatoes</a></h1>
+    <div class="col-md-6">
+      <button class="btn btn-info">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+    </div>
+  </section>
+  <section class="well col-md-6 col-md-offset-3">
+    <h1 class="h3 col-md-6 text-right" style="margin-top: 0"><a href="#">Potatos Au Gratin</a></h1>
+    <div class="col-md-6">
+      <button class="btn btn-info">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+    </div>
+  </section>
+</section>
+END: THIS IS IN TEMPLATES/INDEX;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI">file-digest://app/assets/javascripts/templates/index.html;TTF:charsetI"
+utf-8;F:digest"%Cô—Y•O¹ƒÌ×gWgâkÔxQ°8õÀÜ™Q6^;me:lengthi':dependencies_digest"%¦Z“WŠbÉdS-ËÇpôVâzð>ü1ÿâ6tŽ“:idI"Ed5d6f32f0d00cf93a86d637239d5b88a4ca0560e459e4cc09f30b75b6562c22d;F:
+mtimel+èW

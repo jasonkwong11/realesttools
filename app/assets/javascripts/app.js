@@ -19,7 +19,9 @@ angular
         templateUrl: '/app/views/properties/show.html',
         controller: 'PropertyController',
         resolve: {
-          
+          property: function(GetPropertyService){
+            return GetPropertyService.getProperty();
+          }
         }
       })
 
