@@ -1,5 +1,6 @@
 function PropertyController($scope, $stateParams, GetPropertyService) {
   var ctrl = this;
+  ctrl.property = [];
 
   GetPropertyService
   .getProperty()
